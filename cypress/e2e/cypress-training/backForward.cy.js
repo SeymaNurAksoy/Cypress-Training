@@ -3,14 +3,14 @@ describe('Back Forward for cypress', () => {
         cy.visit('https://www.cypress.io');
         cy.get(':nth-child(5) > .nav-bar-link').click();
         cy.title().should('eq', 'Scale Open-Source Testing with Cypress Cloud | Cypress Cloud Pricing');
-        cy.wait(1000);
         cy.go(-1); // Tarayıcı geri git
         cy.title().should('eq', 'Testing Frameworks for Javascript | Write, Run, Debug | Cypress');
-        cy.wait(1000);
         cy.go(1); // Tarayıcı ileri git
         cy.title().should('eq', 'Scale Open-Source Testing with Cypress Cloud | Cypress Cloud Pricing');
-
-        
+        cy.go(-1); // Tarayıcı geri git
+        cy.title().should('eq', 'Testing Frameworks for Javascript | Write, Run, Debug | Cypress');
+        cy.go(1); // Tarayıcı ileri git
+        cy.title().should('eq', 'Scale Open-Source Testing with Cypress Cloud | Cypress Cloud Pricing');
         
     });
 });
