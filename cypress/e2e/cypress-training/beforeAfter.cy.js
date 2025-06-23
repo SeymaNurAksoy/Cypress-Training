@@ -1,6 +1,6 @@
 describe("Before After Use", () => {
   before(() => {
-    cy.log("Before kullanımı cypress test");
+    cy.log("Before kullanimi cypress test");
     cy.visit("https://www.automationexercise.com/");
   });
 
