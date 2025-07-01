@@ -13,5 +13,6 @@ describe("Faker Data Usage in Cypress", () => {
     cy.get('[data-qa="login-email"]').type(fakeEmail);
     cy.get('[data-qa="login-password"]').type(fakePassword);
     cy.get('[data-qa="login-button"]').click();
+    cy.get('[data-qa="account-created"]').should("contain", "Account Created!");
   });
 });
