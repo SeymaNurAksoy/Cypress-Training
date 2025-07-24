@@ -17,6 +17,7 @@
 import './commands'
 import 'cypress-slow-down/commands';
 import 'cypress-plugin-xhr-toggle'
+import 'cypress-plugin-steps';
 const app = window.top;
 if(!app.document.querySelector('[data-hide-command-log-request]')) {
   const style = app.document.createElement('style');
