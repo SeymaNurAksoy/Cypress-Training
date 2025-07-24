@@ -11,6 +11,10 @@ module.exports = defineConfig({
       on('task', { removeDirectory })
     
   },
+  env: {
+    hideXhr: true
+
+  },
   baseUrl: "https://example.cypress.io/"
 },
 });
