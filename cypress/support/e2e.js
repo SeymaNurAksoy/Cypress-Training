@@ -15,6 +15,7 @@
 
 // Import commands.js using ES2015 syntax:
 import './commands'
+import 'cypress-slow-down/commands';
 
 Cypress.on('uncaught:exception', (err, runnable) => {
   if (err.message.includes("Failed to execute 'observe' on 'MutationObserver'")) {

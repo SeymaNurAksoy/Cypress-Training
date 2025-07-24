@@ -25,6 +25,8 @@
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 import customCommandsLogin from '../pageObjectModel/customCommandsLogin';
 import CustomCommandsLogin from '../pageObjectModel/customCommandsLogin';
+import 'cypress-file-upload';
+require('cypress-delete-downloads-folder').addCustomCommand();
 
 Cypress.Commands.add('login', (email, password) => {
     customCommandsLogin.usernameField.type(email);
