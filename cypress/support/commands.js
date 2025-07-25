@@ -33,3 +33,17 @@ Cypress.Commands.add('login', (email, password) => {
     customCommandsLogin.passwordField.type(password);
     customCommandsLogin.loginButton.click();
 });
+Cypress.Commands.add('loginWithSession', (username, password) => {
+
+    cy.session([username, password], () => {
+    // oturum açma işlemlerini burada yapıyoruz
+    cy.visit('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login');
+    cy.get(':nth-child(2) > .oxd-input-group > :nth-child(2) > .oxd-input').type(username);
+    cy.get(':nth-child(3) > .oxd-input-group > :nth-child(2) > .oxd-input').type(password);
+    cy.get('.oxd-button').click();
+    cy.wait(1000); // Gerekirse bekleme süresi ekleyebilirsiniz
+    cy.get('.oxd-glass-button').should('be.visible')
+    });
+    
+
+});
