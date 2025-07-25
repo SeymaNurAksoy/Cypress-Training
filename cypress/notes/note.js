@@ -1,0 +1,1 @@
+//npx cypress run --spec .\cypress\e2e\cypress-training\fixtureExample.cy.js --raporlama yaparken bu komutla testi çalıştır
