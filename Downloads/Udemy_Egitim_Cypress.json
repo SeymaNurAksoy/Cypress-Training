@@ -1,0 +1,206 @@
+{
+    "title": "Udemy Eğitim Cypress",
+    "steps": [
+        {
+            "type": "setViewport",
+            "width": 928,
+            "height": 680,
+            "deviceScaleFactor": 1,
+            "isMobile": false,
+            "hasTouch": false,
+            "isLandscape": false
+        },
+        {
+            "type": "navigate",
+            "url": "https://shopist.io/",
+            "assertedEvents": [
+                {
+                    "type": "navigation",
+                    "url": "https://shopist.io/",
+                    "title": "Shop.ist"
+                }
+            ]
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "section > a div:nth-of-type(3)"
+                ],
+                [
+                    "xpath///*[@id=\"main\"]/div/section/a/div/div[3]"
+                ],
+                [
+                    "pierce/section > a div:nth-of-type(3)"
+                ]
+            ],
+            "offsetY": 25.899993896484375,
+            "offsetX": 88.79998779296875,
+            "assertedEvents": [
+                {
+                    "type": "navigation",
+                    "url": "https://shopist.io/department/chairs",
+                    "title": ""
+                }
+            ]
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "div.products > div:nth-of-type(1) img"
+                ],
+                [
+                    "xpath///*[@id=\"main\"]/div[2]/div[1]/div[1]/a/div/img"
+                ],
+                [
+                    "pierce/div.products > div:nth-of-type(1) img"
+                ]
+            ],
+            "offsetY": 140.79999542236328,
+            "offsetX": 276,
+            "assertedEvents": [
+                {
+                    "type": "navigation",
+                    "url": "https://shopist.io/department/chairs/product/1",
+                    "title": ""
+                }
+            ]
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "div.purchase-button"
+                ],
+                [
+                    "xpath///*[@id=\"main\"]/section/div[2]/div/div/div[3]"
+                ],
+                [
+                    "pierce/div.purchase-button"
+                ],
+                [
+                    "text/Add to cart"
+                ]
+            ],
+            "offsetY": 11.79998779296875,
+            "offsetX": 100.6875
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "div.navbar-small > div"
+                ],
+                [
+                    "xpath///*[@id=\"__nuxt\"]/div/div/div[1]/div[2]/div"
+                ],
+                [
+                    "pierce/div.navbar-small > div"
+                ]
+            ],
+            "offsetY": 30,
+            "offsetX": 29
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/CART (1)",
+                    "aria/[role=\"generic\"]"
+                ],
+                [
+                    "a:nth-of-type(6) > div"
+                ],
+                [
+                    "xpath///*[@id=\"__nuxt\"]/div/div/div[1]/div[3]/div/a[6]/div"
+                ],
+                [
+                    "pierce/a:nth-of-type(6) > div"
+                ]
+            ],
+            "offsetY": 25,
+            "offsetX": 85,
+            "assertedEvents": [
+                {
+                    "type": "navigation",
+                    "url": "https://shopist.io/cart",
+                    "title": ""
+                }
+            ]
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "div.remove-button"
+                ],
+                [
+                    "xpath///*[@id=\"main\"]/section/div[2]/div[1]/div[3]/div/div/div/div[2]/div[1]/div[2]"
+                ],
+                [
+                    "pierce/div.remove-button"
+                ],
+                [
+                    "text/Remove"
+                ]
+            ],
+            "offsetY": 11.79998779296875,
+            "offsetX": 64.39999389648438
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "div.checkout"
+                ],
+                [
+                    "xpath///*[@id=\"main\"]/section/div[2]/div[2]/div[8]"
+                ],
+                [
+                    "pierce/div.checkout"
+                ],
+                [
+                    "text/Checkout"
+                ]
+            ],
+            "offsetY": 16.79998779296875,
+            "offsetX": 452
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/main navigation",
+                    "aria/[role=\"image\"]"
+                ],
+                [
+                    "div.navbar-small img"
+                ],
+                [
+                    "xpath///*[@id=\"__nuxt\"]/div/div/div[1]/div[2]/a/div/img"
+                ],
+                [
+                    "pierce/div.navbar-small img"
+                ]
+            ],
+            "offsetY": 5,
+            "offsetX": 143,
+            "assertedEvents": [
+                {
+                    "type": "navigation",
+                    "url": "chrome-extension://aapbdbdomjkkjkaonfhkkikfgjllcleb/offscreen.html",
+                    "title": "Shop.ist"
+                }
+            ]
+        }
+    ]
+}

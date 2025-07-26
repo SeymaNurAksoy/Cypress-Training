@@ -3,6 +3,7 @@ const { removeDirectory } = require('cypress-delete-downloads-folder');
 
 
 module.exports = defineConfig({
+  projectId: "9j1wfx",
   viewportHeight: 1200,
   viewportWidth: 1500,
   reporter:'cypress-mochawesome-reporter',
@@ -21,6 +22,11 @@ module.exports = defineConfig({
     shopist: 'https://shopist.io',
     google: 'https://www.google.com',
   },
-  baseUrl: "https://example.cypress.io/"
+  specPattern: 'cypress/e2e/**/*.{js,jsx,ts,tsx}',
+  baseUrl: "https://example.cypress.io/",
+  experimentalWebKitSupport: true,
+  experimentalRunAllSpecs: true,
+  watchForFileChanges: false,
+  experimentalStudio: true,
 },
 });

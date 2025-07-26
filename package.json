@@ -10,6 +10,7 @@
     "mocha": "^11.7.1",
     "node-polyfill-webpack-plugin": "^4.1.0",
     "path-browserify": "^1.0.1",
+    "playwright-webkit": "^1.54.1",
     "util": "^0.12.5"
   },
   "scripts": {
