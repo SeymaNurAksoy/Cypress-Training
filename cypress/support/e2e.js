@@ -19,6 +19,8 @@ import 'cypress-slow-down/commands';
 import 'cypress-plugin-xhr-toggle'
 import 'cypress-plugin-steps';
 import 'cypress-mochawesome-reporter/register';
+import 'cypress-if';
+
 const app = window.top;
 if(!app.document.querySelector('[data-hide-command-log-request]')) {
   const style = app.document.createElement('style');

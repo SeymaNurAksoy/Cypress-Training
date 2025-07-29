@@ -26,7 +26,7 @@ module.exports = defineConfig({
   baseUrl: "https://example.cypress.io/",
   experimentalWebKitSupport: true,
   experimentalRunAllSpecs: true,
-  watchForFileChanges: false,
+  watchForFileChanges: true,
   experimentalStudio: true,
 },
 });
